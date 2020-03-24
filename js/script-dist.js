@@ -1,18 +1,1 @@
-const block3 = document.querySelector(".block3")
-const modal = document.querySelector(".modal")
-const exit = document.querySelector(".exit")
-const next = document.querySelector(".next")
-
-block3.addEventListener("click", handleClick);
-
-function handleClick() {
-  	modal.style.display === 'none' || !modal.style.display ? 
-    modal.style.display = 'block' : modal.style.display = 'none'
-}
-
-exit.addEventListener("click", changeDisplay)
-next.addEventListener("click", changeDisplay)
-
-function changeDisplay() {
-  modal.style.display = 'none'
-}
+const e=document.querySelector(".block3"),t=document.querySelector(".modal"),n=document.querySelector(".exit"),l=document.querySelector(".next");function c(){t.style.display="none"}e.addEventListener("click",(function(){"none"!==t.style.display&&t.style.display?t.style.display="none":t.style.display="block"})),n.addEventListener("click",c),l.addEventListener("click",c);
